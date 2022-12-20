@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="web/css/jQuery_04.css" />
+    <title>Aula jQuery</title>
+
+</head>
+<body>
+    <label>Digite seu nome:</label>
+    <input type="text" id="nome">
+    <br/> <br/>
+    <div id="bloco"></div>
+    <p id="texto"></p>
+
+    <script>
+        $("#bloco").on({
+            click:()=>{$("#texto").text("Clique no quadrado!!")},
+            mouseenter:()=>{$("#texto").text("Mouse entrou no quadrado!!")},
+            mouseleave:()=>{$("#texto").text("Mouse saiu do quadrado!!")},
+            dblclick:()=>{$("#texto").text("Clique duplo no quadrado!!")}
+        })
+    </script>
+</body>
+</html>
