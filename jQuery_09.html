@@ -11,17 +11,19 @@
 <body>
     <p id="texto1"> Curso jQuery</p>
     <br/>
-    <div id="texto2"> Aula jQuery</div>
-    <br/>
     <p id="resultado"></p>
 
     <script>
-        $(document).click((event)=>{
-            $("#resultado").text("Objeto clicado foi: " + event.target.id)
-            if(event.target.id == "resultado") {
-                alert("Resultado clicado com sucesso!!")
+        $(document).on ({
+            click:()=>{$("#resultado").text(event.type + ":" + event.which)},
+            keydown: ()=>{
+                $("#resultado").text(event.type + ":" + event.which)
+                if(event.which == 13) {
+                    alert("Tecla 13 acionada!!")
+                }
             }
         })
+    
     </script>
 </body>
 </html>
