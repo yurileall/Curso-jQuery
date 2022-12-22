@@ -14,13 +14,13 @@
             Aulo do Curso<br/><br/><br/>
             <span>Curso (jQuery)</span>
         </p>
-
-        <script>
+    </div>
+    <script>
             $("div").click(()=> {alert("Evento disparado no DIV")})
             $("p").click(()=> {event.stopPropagation();alert("Evento disparado no P")})
             $("span").click(()=> {event.stopImmediatePropagation();alert("Evento disparado no SPAN")})
             //stopPropagation para a propagação do evento anterior
-        </script>
-   </div>
+    </script>
+ 
 </body>
 </html>
