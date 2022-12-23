@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <div>
+          <span>
+               <h3>
+                    CBF Cursos
+               </h3>
+               <p>
+                    Curso de jQuery
+               </p>
+               <h2>
+                    Seletores irmãos
+               </h2>
+               <p>
+                    Siblings
+               </p>
+          </span>
+     </div>
+     <script>
+          //$("h3").siblings().css({"border":"1px solid #f00"})
+          //$("h2").next().css({"border":"1px solid #f00"})
+          $("p").prev().css({"border":"1px solid #f00"})
+
+          // O siblings aponta para todos o elemento irmão
+          // O next aponta para o elemento irmão a sua direita (a baixo)
+          // O nextAll aponta para todos os elementos irmãos a sua direita (a baixo)
+          // o prev aponta para o elemento irmão a sua esquerda (a cima)
+          // o prevAll aponta para todos os elementos irmão a sua esquerda (a cima)
+     </script>
+</body>
+
+</html>
