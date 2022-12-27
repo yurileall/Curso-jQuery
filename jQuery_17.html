@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+
+    <style>
+          .vermelho {
+               border: 1px solid #000;
+               width: 500px;
+               height: 500px;
+               background-color: #f00;
+          }
+    </style>
+</head>
+
+<body>
+     <div id="caixa" class="vermelho">
+          <h3>CBF Curso</h3>
+          <p>Aula jQuery</p>
+     </div>
+     <button class="btn_ocultar">Ocultar</button>
+     <button class="btn_mostrar">Mostrar</button>
+     
+     <script>
+         $(".btn_ocultar").click(
+               function() {
+                    $("#caixa").hide(".vemelho")
+               }
+         )
+
+         $(".btn_mostrar").click(
+               function() {
+                    $("#caixa").show(".vermelho")
+               }
+         )
+         
+     </script>
+</body>
+
+</html>  
