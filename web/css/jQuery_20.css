@@ -1,0 +1,14 @@
+.caixa {
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}

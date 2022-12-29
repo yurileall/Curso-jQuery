@@ -13,19 +13,26 @@
           <h3>CBF Curso</h3>
           <p>Aula jQuery</p>
      </div>
-     <button class="btn_aumentar">Aumentar</button>
-     <button class="btn_diminuir">Diminuir</button>
-    
+     <button class="btn_mostrar">Mostrar</button>
+     <button class="btn_ocultar">Ocultar</button>
+     <button class="btn_Mostrarocultar">Mostrar/Ocultar</button>
+     
      <script>
-          $(".btn_aumentar").click(
+          $(".btn_mostrar").click(
                function() {
-                    $("#caixa").delay(2000).animate({width: "500px", height: "500px"})
+                    $("#caixa").fadeIn(2000)
                }
           )
 
-          $(".btn_diminuir").click(
+          $(".btn_ocultar").click(
                function() {
-                    $("#caixa").delay(1000).animate({width: "200px", height: "200px"})
+                    $("#caixa").fadeOut(2000)
+               }
+          )
+
+          $(".btn_Mostrarocultar").click(
+               function() {
+                    $("#caixa").fadeOut().delay(1000).fadeIn()
                }
           )
 
