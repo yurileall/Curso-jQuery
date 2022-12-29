@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="web/css/jQuery_19.css" />
+</head>
+
+<body>
+     <div id="caixa" class="caixa">
+          <h3>CBF Curso</h3>
+          <p>Aula jQuery</p>
+     </div>
+     <button class="btn_aumentar">Aumentar</button>
+     <button class="btn_diminuir">Diminuir</button>
+    
+     <script>
+          $(".btn_aumentar").click(
+               function() {
+                    $("#caixa").delay(2000).animate({width: "500px", height: "500px"})
+               }
+          )
+
+          $(".btn_diminuir").click(
+               function() {
+                    $("#caixa").delay(1000).animate({width: "200px", height: "200px"})
+               }
+          )
+
+     </script>
+</body>
+
+</html>  
