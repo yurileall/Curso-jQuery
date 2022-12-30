@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="web/css/jQuery_23.css" />
+</head>
+
+<body>
+     <div id="menu" class="menu">
+          <div id="menuJquery" class="itemMenu">jQuery</div>
+          <div id="menuCanvas" class="itemMenu">Canvas</div>
+          <div id="menuPython" class="itemMenu">Python</div>
+          <div id="menuArduino" class="itemMenu">Arduino</div>
+     </div>
+     <div id="submenu_jQuery" class="submenu">
+          <div class="itemSubMenu">Aula jQuery</div>
+          <div class="itemSubMenu">Material jQuery</div>
+     </div>
+     <div id="submenu_canvas" class="submenu">
+          <div class="itemSubMenu">Aula Canvas</div>
+          <div class="itemSubMenu">Material Canvas</div>
+     </div>
+     <div id="submenu_python" class="submenu">
+          <div class="itemSubMenu">Aula Python</div>
+          <div class="itemSubMenu">Material Python</div>
+     </div>
+     <div id="submenu_arduino" class="submenu">
+          <div class="itemSubMenu">Aula Arduino</div>
+          <div class="itemSubMenu">Material Arduino</div>
+     </div>
+     <script>
+          $("#menuJquery").click(
+               function() {
+                    $("#submenu_jQuery").fadeToggle()
+                    $("#submenu_jQuery").css("display", "flex")
+               }
+          )
+          $("#menuCanvas").click(
+               function() {
+                    $("#submenu_canvas").fadeToggle()
+                    $("#submenu_canvas").css("display", "flex")
+               }
+          )
+          $("#menuPython").click(
+               function() {
+                    $("#submenu_python").fadeToggle()
+                    $("#submenu_python").css("display", "flex")
+               }
+          )
+          $("#menuArduino").click(
+               function() {
+                    $("#submenu_arduino").fadeToggle()
+                    $("#submenu_arduino").css("display", "flex")
+               }
+          )
+     </script>
+</body>
+
+</html>  
