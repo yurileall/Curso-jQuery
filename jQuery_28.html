@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="web/css/jQuery_28.css" />
+</head>
+
+<body>
+     <p>
+          <button id="btnAnimar">Animar</button>
+          <button id="btnProxima">Próxima</button>
+          <button id="btnParar">Parar</button>
+          <button id="btnFim">Fim</button>
+     </p>
+
+     <div id="caixa" class="caixa"></div>
+
+     <script>
+         $("#btnAnimar").click(
+          function() {
+               $("#caixa").animate({left: "500px"}, {duration: 2000})
+               $("#caixa").animate({top: "400px"}, {duration: 2000})
+               $("#caixa").animate({left: "0px"}, {duration: 2000})
+               $("#caixa").animate({top: "50px"}, {duration: 2000})
+          }
+         )
+
+         $("#btnProxima").click(
+          function() {
+               $("#caixa").stop()
+          }
+         )
+
+         $("#btnParar").click(
+          function() {
+               $("#caixa").stop(true, false)//limpar filas / pular para o fim
+          }
+         )
+
+         $("#btnFim").click(
+          function() {
+               $("#caixa").stop(false, true)//limpar filas / pular para o fim
+          }
+         )
+     </script>
+</body>
+
+</html>  
