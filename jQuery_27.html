@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="web/css/jQuery_26.css" />
+</head>
+
+<body>
+   <div id="menu" class="menu"></div>
+     <div id="menus">
+          <button class="btnMenu">home</button>
+          <button class="btnMenu">cursos</button>
+          <button class="btnMenu">material</button>
+          <button class="btnMenu">contatos</button>
+          <button class="btnMenu">sobre</button>
+     </div>
+     <div id="controle">
+          <button id="btnmenu">Menu</button>
+          <p id="msg">Menu exibido</p>
+     </div>
+     <script>
+          $("#btnmenu").click(
+               function() {
+                    $("#menus").slideToggle(100, ()=> {
+                         if($("#menus").is(":visible"))  {
+                              $("#msg").text("Menu exibido")
+                              $("#controle").css("background", "#f00")
+                         } else {
+                              $("#msg").text("Menu oculto")
+                              $("#controle").css("background", "888")
+
+
+
+                         }
+                    })
+               }
+          )
+     </script>
+</body>
+
+</html>  
