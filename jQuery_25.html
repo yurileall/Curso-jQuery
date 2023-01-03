@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="web/css/jQuery_24.css" />
+</head>
+
+<body>
+     <p>
+          <button id="btnAumentar">Aumentar</button>
+          <button id="btnDiminuir">Diminuir</button>
+     </p>
+     <p>
+          <button id="btnFinalizar">Finalizar</button>
+     </p>
+
+     <p id="info">0</p>
+
+     <div id="caixa" class="caixa"></div>
+     <script>
+          const cx = $("#caixa")
+          $("#btnAumentar").click(
+               function() {
+                    $("#caixa").animate({width: "500px", height: "500px"}, {duration: 5000, complete: ()=> {$("#info").text(cx.queue().length)}})
+                    $("#info").text(cx.queue().length)
+               }
+          )
+          $("#btnDiminuir").click(
+               function() {
+                    $("#caixa").animate({width: "100px", height: "100px"}, {duration: 5000, complete: ()=> {$("#info").text(cx.queue().length)}})
+                    $("#info").text(cx.queue().length)
+               }
+          )
+          $("#btnFinalizar").click(
+               function() {
+                    $("#caixa").finish()
+               }
+          )
+     </script>
+</body>
+
+</html>  
