@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.2.js"
+          integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="web/css/jQuery_31.css" />
+</head>
+
+<body>
+     <p>
+          <button id="btnVerde">Verde</button>
+          <button id="btnVermelho">Vermelho</button>
+          <button id="btnAzul">Azul</button>
+     </p>
+
+     <div id="caixa" class="caixa">
+          <div id="d0" class="subcaixa" style="background-color: white;">0</div>
+     </div>
+
+     <script>
+          $("#btnVerde").click(
+               function() {
+                    $("#caixa").css({"background-color":"#0f0","color":"#f0f"})
+                    alert($("#caixa").css("background-color"))
+               }
+          )
+
+          $("#btnVermelho").click(
+               function () {
+                    $("#caixa").css({"background-color":"#f00", "color":"#00f"})
+                    alert($("#caixa").css("background-color"))
+               }
+          )
+
+          $("#btnAzul").click(
+               function () {
+                    $("#caixa").css({"background-color":"#00f", "color":"#ff0"})
+                    alert($("#caixa").css("background-color"))
+               }
+          )
+
+     </script>
+</body>
+
+</html>
