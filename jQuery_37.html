@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.2.js"
+          integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="web/css/jQuery_37.css" />
+</head>
+
+<body>
+     <p>
+          <button id="btnReset">Reset</button>
+          <button id="btnMudar">Mudar</button>
+     </p>
+
+     <div id="caixa" class="caixa">       
+          <div id="item0" class="item cor1">1</div>
+          <div id="item1" class="item cor2">2</div>
+          <div id="item2" class="item cor3">3</div>
+          <div id="item3" class="item cor4">4</div>
+          <div id="item4" class="item cor5">5</div>
+     </div>
+
+     <div id="caixa2" class="caixa"></div>
+
+     <script>
+         let itens = $(".item")
+         let i = 0
+
+         $("#btnMudar").click(()=> {
+               let item = $(itens[i]).detach()
+               i++
+               $("#caixa2").append(item)
+         })
+
+         $("#btnReset").click(()=> {
+               for(let i=0;i<itens.length; i++) {
+                    let item = $(itens[i]).detach()
+                    $("#caixa").append(item)
+               }
+         })
+     </script>
+</body>
+
+</html>
