@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.2.js"
+          integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="web/css/jQuery_34.css" />
+</head>
+
+<body>
+     <p>
+          <button id="btnVerde" class="verde">Verde</button>
+          <button id="btnVermelho" class="vermelho" >Vermelho</button>
+          <button id="btnAzul" class="azul">Azul</button>
+     </p>
+
+     <div id="caixa" class="caixa"></div>
+
+     <script>
+          $("#btnVerde").click(
+               function() {
+                    $("#caixa").removeClass("vermelho")
+                    $("#caixa").removeClass("azul")
+                    $("#caixa").addClass("verde")
+               }
+          )
+
+          $("#btnVermelho").click(
+               function () {
+                    $("#caixa").removeClass("azul")
+                    $("#caixa").removeClass("verde")
+                    $("#caixa").addClass("vermelho")
+               }
+          )
+
+          $("#btnAzul").click(
+               function () {
+                    $("#caixa").removeClass("verde")
+                    $("#caixa").removeClass("vermelho")
+                    $("#caixa").addClass("azul")
+               }
+          )
+
+     </script>
+</body>
+
+</html>
