@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.2.js"
+          integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="web/css/jQuery_39.css" />
+</head>
+
+<body>
+     <p>
+          <button id="btnPosição">Posição</button>
+          <br/>
+          <br/>
+          <label>Topo:</label>
+          <input type="range" id="top" name="top" min="0" max="500">
+          <label>Left:</label>
+          <input type="range" id="left" name="left" min="0" max="500">
+     </p>
+
+     <div id="caixa" class="caixa" style="position: absolute; top: 100px; left: 100px; background-color: #f00;">       
+         
+     </div>
+
+     <script>
+        $("#btnPosição").click(()=> {
+          let t=$("#caixa").position().top
+          let l=$("#caixa").position().left
+          alert("Top: "+t+" | Left: "+l)
+        })
+
+        $("#top").change((e)=> {
+          let valor=document.getElementById(e.target.id).value
+          $("#caixa").css({"top":+valor+"px"})
+        })
+
+        $("#left").change((e)=> {
+          let valor=document.getElementById(e.target.id).value
+          $("#caixa").css({"left":+valor+"px"})
+        })
+
+         
+     </script>
+</body>
+
+</html>
