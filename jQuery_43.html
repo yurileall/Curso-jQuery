@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.2.js"
+          integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="web/css/jQuery_43.css" />
+</head>
+
+<body>
+     <div class="menu">
+          <button id="btnRolarLeft"> Rolar left</button>
+          <button id="btnRolarTop"> Rolar top</button>
+          <button id="btnPosLeft"> Posição Left</button>
+          <button id="btnPosTop"> Posição top</button>
+          <button id="btnResetPos"> Resetar Posição</button>
+     </div>
+
+     <div id="texto" style="border:1px solid #000;width:100px;height:150px;overflow:auto">       
+         Esta mensagem é apenas para teste, favor desconsiderar, muito obrigado. Boa noite!!
+         Esta mensagem é apenas para teste, favor desconsiderar, muito obrigado. Boa noite!!
+         Esta mensagem é apenas para teste, favor desconsiderar, muito obrigado. Boa noite!!
+     </div>
+
+     <script>
+         $("#btnRolarLeft").click(() => {
+            $("#texto").scrollLeft(150);
+         })
+
+         $("#btnRolarTop").click(() => {
+            $("#texto").scrollTop(150);
+         })
+
+         $("#btnPosLeft").click(() => {
+            alert ($("#texto").scrollLeft());
+         })
+
+         $("#btnPosTop").click(() => {
+            alert ($("#texto").scrollTop());
+         })
+
+         $("#btnResetPos").click(() => {
+            $("#texto").scrollLeft(0).scrollTop(0);
+         })
+
+
+     </script>
+</body>
+
+</html>
