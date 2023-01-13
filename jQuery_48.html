@@ -26,13 +26,14 @@
      <p id="p5">youtube.com/cfbcursos</p>
 
      <script>
-        $("p").click((e)=> {
-          alert($(e.currentTarget).index())
+          let yuri= $.noConflict()
+        yuri("p").click((e)=> {
+          alert(yuri(e.currentTarget).index())
         })
 
-        $("p").click(
+        yuri("p").click(
           function () {
-          alert($(this).index())
+          alert(yuri(this).index())
         })
      </script>
 </body>
