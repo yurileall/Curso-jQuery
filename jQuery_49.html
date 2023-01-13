@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.2.js"
+          integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="web/css/jQuery_47.css" />
+</head>
+
+<body>
+     <div id="caixa" class="caixa">
+          <h4 id="p1">CFB Cursos</h4>
+          <h4 id="p2">Curso jquery</h4>
+          <h4 id="p3">Função index()</h4>
+          <h4 id="p4">cfbcursos.com.br</h4>
+          <h4 id="p5">youtube.com/cfbcursos</h4>
+     </div>
+     
+     <p id="p1">CFB Cursos</p>
+     <p id="p2">Curso jquery</p>
+     <p id="p3">Função index()</p>
+     <p id="p4">cfbcursos.com.br</p>
+     <p id="p5">youtube.com/cfbcursos</p>
+
+     <button id="btnP">Quantidade de P</button>
+     <button id="btnH4">Quantidade de h4</button>
+
+     <script>
+     
+        $("#btnP").click((e)=> {
+          alert($("P").length)
+        })
+
+        $("#btnH4").click(
+          function () {
+          alert($("h4").length)
+        })
+     </script>
+</body>
+
+</html>
