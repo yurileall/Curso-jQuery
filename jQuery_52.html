@@ -11,6 +11,8 @@
 </head>
 
 <body>
+     <button id="btnAlterar">Alterar</button>
+     <button id="btnRedefinir">Redefinir</button>
      <div style="display: flex;">
           <div id="caixa1" class="caixa">
                <h4 id="h4_1">CFB Cursos</h4>
@@ -28,6 +30,14 @@
                + "<br/>outerWidth: " + cx.outerWidth() + "<br/>outerHeight: " + cx.outerHeight() 
                + "<br/>outerWidth(true): " + cx.outerWidth(true) + "<br/>outerHeight(true): " + cx.outerHeight(true) 
           ) 
+          $("#btnAlterar").click(() => {
+               cx.width(400)
+               cx.height(500)
+          })
+          $("#btnRedefinir").click(() => {
+               cx.width(200)
+               cx.height(250)
+          })
      </script>
 </body>
 
