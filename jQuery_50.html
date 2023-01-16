@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.2.js"
+          integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="web/css/jQuery_47.css" />
+</head>
+
+<body>
+     <div id="caixa1" class="caixa">
+          <h4 id="h4_1">CFB Cursos</h4>
+          <h4 id="h4_2">Curso jquery</h4>
+          <h4 id="h4_3">Função index()</h4>
+          <h4 id="h4_4">cfbcursos.com.br</h4>
+          <h4 id="h4_5">youtube.com/cfbcursos</h4>
+     </div>
+     <div id="caixa2" class="caixa">
+          <p id="p1">CFB Cursos</p>
+          <p id="p2">Curso jquery</p>
+          <p id="p3">Função index()</p>
+          <p id="p4">cfbcursos.com.br</p>
+          <p id="p5">youtube.com/cfbcursos</p>
+     </div>
+
+     <button id="pParaCaixa2">P para caixa 2</button>
+     <button id="h4ParaCaixa2">h4 para caixa 2</button>
+
+     <script>
+          let ep= $("p").toArray()
+          let eh= $("h4").toArray()
+
+          $("#pParaCaixa2").click(() => {
+               $("#caixa2").append(ep)
+               $("#caixa1").append(eh)
+          })
+
+          $("#h4ParaCaixa2").click(() => {
+               $("#caixa2").append(eh)
+               $("#caixa1").append(ep)
+          })
+     </script>
+</body>
+
+</html>
